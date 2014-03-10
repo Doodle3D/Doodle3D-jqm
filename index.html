@@ -1,0 +1,356 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Details</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	
+
+<!-- Start of first page -->
+<div data-role="page" id="devices">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<p>makes 3D printing very easy</p>
+
+	<!-- <p>Please select your Doodle3D WiFi-Box to connect or press search to add your box to this list.</p> -->
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview">
+				<li><a href="#wifibox">Doodle3D-A4D953</a></li>
+				<li><a href="#wifibox">Doodle3D-Rick</a></li>
+				<li><a href="#wifibox">Doodle3D-D63BA4</a></li>
+				<li><a href="#connect_ap">Wired WiFi-Box</a></li>
+				<li><a href="#search">Find...</a></li>
+		</ul>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="wifibox">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Ultimaker @ Doodle3D-123456</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		<ul data-role="listview">
+			<li><a href="#draw">Draw</a></li>
+			<li><a href="#update">Update</a></li>
+			<li><a href="#settings">Settings</a></li>
+			<li><a href="#status">Status</a></li>
+			<li><a href="#tune">Tune</a></li>
+			<li><a href="#control">Control</a></li>
+			
+		</ul>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+</body>
+
+<!-- Start of first page -->
+<div data-role="page" id="search">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Find a WiFi-Box</h1>
+	</div><!-- /header -->
+
+
+	<div role="main" class="ui-content">
+
+	<h1>Step 1 of 2</h1>
+	<p>You are currently connected to internet. There's a big chance the Doodle3D WiFi-Box you're looking for is running it's own network. Please open your network settings and look for a network like 'Doodle3D-123456'. Once connected return to this page.<small> (<a href="#problems">problems?</a>)</small>
+
+	<a href="#find_step2" class="ui-btn">Next</a>
+	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+<!-- Start of first page -->
+<div data-role="page" id="find_step2">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Find a WiFi-Box</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+	<h1>Step 2 of 2</h1>
+	
+	<p>We found your Doodle3D WiFi-Box. It's running its own network 'Doodle3D-123456'. You can keep it this way and start using it now OR you can connect your box to the internet.</p>
+	<br>
+	<ul data-role="listview">
+		<li><a href="#network">Join a network</a></li>
+		<li><a href="#draw">Draw (offline)</a></li>
+	</ul>
+	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of first page -->
+<div data-role="page" id="problems">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Troubleshooting</h1>
+	</div><!-- /header -->
+
+
+	<div role="main" class="ui-content">
+
+	<p>You've tried but still can't find your WiFi-Box's own network?</p>
+
+	<h3>make sure that:</h3>
+	<ul>
+		<li>the box gets power (green lights should be on)</li>
+		<li>the box has fully started (takes a minute or two)?</li>
+	</ul>
+
+	<h3>if not</h3>
+	<ul>
+		<li>Is your box connected to a another network? <a href="#">more info</a></li>
+		<li>If your computer has an ethernet (network) port you can connect it directly to the Doodle3D WiFi-Box using the supplied ethernet cable.</li>
+	</ul>
+
+	<h3>got stuck?</h3>
+	if the problems remain please email us at <a href="mailto:help@doodle3d.com">help@doodle3d.com</a>
+
+
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of first page -->
+<div data-role="page" id="connect_ap">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Doodle3D-987654 (accesspoint)</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview">
+			<li><a href="#network">Join a network</a></li>
+			<li><a href="#draw">Draw (offline)</a></li>
+		</ul>
+
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+<!-- Start of first page -->
+<div data-role="page" id="status">
+
+	<img id="logo" src="img/logo_full.png">
+	<div data-role="header">
+			<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+			<h1>Ultimaker @ Doodle3D-123456</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview">
+				<li data-role="list-divider">temperature</li>
+				<li>nozzle: 223</li>
+				<li>bed: 85</li>
+				<li data-role="list-divider">progress</li>
+				<li>printing time: 20m</li>
+				<li>time left: 2h30</li>
+		</ul>
+
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="network">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<h3>Join a network</h3>
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview">
+			<li data-icon="lock"><a href="#join_secured_network">Baksteen</a></li>
+			<li><a href="#connecting_to_network">Thomson12445</a></li>
+			<li><a href="#connecting_to_network">H234SD53</a></li>
+			<li data-icon="edit"><a href="#join_other_network">Other...</a></li>
+		</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="join_other_network">
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div role="main" class="ui-content">
+		<h3>Join a hidden network</h3>
+		<input type="text" name="textinput-s" id="ssid" placeholder="Network name" value="" data-clear-btn="true">
+		<input type="password" name="textinput-s" id="textinput-s" placeholder="Password" value="" data-clear-btn="true">
+		<button class="ui-shadow ui-btn ui-corner-all">Connect</button>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="join_secured_network">
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>	
+	<div role="main" class="ui-content">
+		<h3>Join a secured network</h3>
+		<input type="password" name="textinput-s" id="textinput-s" placeholder="Password" value="" data-clear-btn="true">
+		<button class="ui-shadow ui-btn ui-corner-all">Connect</button>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="connecting_to_network">
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div role="main" class="ui-content">
+		<h3>Connecting to network...</h3>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="draw">
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+
+	<div role="main" class="ui-content">
+		<div id="drawingCanvas"></div>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="settings">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+
+	<div role="main" class="ui-content">
+		<p>Settings</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="tune">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Ultimaker @ Doodle3D-123456</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+		<h3>Tune [current value's]</h3>
+		<div data-role="fieldcontain">
+				<label for="slider-0">Speed [<div id="divSpeed" style="display: inline;">100</div>%]:</label>
+				<input type="range" name="slider" id="slider-0" value="100" min="0" max="300" step="1" />
+		</div>
+
+		<div data-role="fieldcontain">
+				<label for="slider-0">Temp [<div id="divHotend" style="display: inline;"></div>&deg;C/<div id="divHotendTarget" style="display: inline;">0</div>&deg;C]:</label>
+				<input type="range" name="printer.temperature" id="sliderHotend" value="200" min="0" max="250" step="1" />
+		</div>
+
+		<div data-role="fieldcontain">
+				<label for="slider-0">Flow [<div id="divFlow" style="display: inline;">100</div>%]:</label>
+				<input type="range" name="slider" id="slider-0" value="100" min="10" max="300" step="1" />
+		</div>
+
+		<div data-role="fieldcontain">
+				<label for="slider-0">Fan Speed [<div id="divFan" style="display: inline;">0</div>%]:</label>
+				<input type="range" name="slider" id="slider-0" value="255" min="0" max="255" step="1" />
+		</div>
+
+		<div data-role="fieldcontain">
+				<label for="basic">Custom gcode:</label>
+				<input type="text" name="name" id="basic" value=""  />
+		</div>
+		<div class="ui-body">
+		<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
+				<div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>
+		</fieldset>
+	</div>
+
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="control">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Ultimaker @ Doodle3D-123456</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+		<h3>Control</h3>
+
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><button type="submit" data-theme="c" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">X-</button></div>
+			<div class="ui-block-b"><button type="submit" data-theme="c" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">X+</button></div>
+		</div>
+
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><button type="submit" data-theme="c" class="ui-btn ui-icon-arrow-u ui-btn-icon-left">Y-</button></div>
+			<div class="ui-block-b"><button type="submit" data-theme="c" class="ui-btn ui-icon-arrow-d ui-btn-icon-right">Y+</button></div>
+		</div>
+
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><button type="submit" data-theme="c" class="ui-btn ui-icon-arrow-u ui-btn-icon-left">Z-</button></div>
+			<div class="ui-block-b"><button type="submit" data-theme="c" class="ui-btn ui-icon-arrow-d ui-btn-icon-right">Z+</button></div>
+		</div>
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="update">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Update</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+	<script>
+		$(function(){
+			$( "[data-role='header'], [data-role='footer']" ).toolbar();
+		});
+	</script>
+
+</body>
+</html>
