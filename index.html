@@ -28,7 +28,7 @@
 				<li><a href="#wifibox">Doodle3D-Rick</a></li>
 				<li><a href="#wifibox">Doodle3D-D63BA4</a></li>
 				<li><a href="#connect_ap">Wired WiFi-Box</a></li>
-				<li><a href="#search">Find...</a></li>
+				<li><a href="#find">Find...</a></li>
 		</ul>
 
 	</div><!-- /content -->
@@ -61,8 +61,8 @@
 </div><!-- /page -->
 </body>
 
-<!-- Start of first page -->
-<div data-role="page" id="search">
+<!-- Start of FIND page -->
+<div data-role="page" id="find">
 
 	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
 	<div data-role="header">
@@ -73,8 +73,9 @@
 
 	<div role="main" class="ui-content">
 
+	<img id = "logo" src="img/Step_1.png">
 	<h1>Step 1 of 2</h1>
-	<p>You are currently connected to internet. There's a big chance the Doodle3D WiFi-Box you're looking for is running it's own network. Please open your network settings and look for a network like 'Doodle3D-123456'. Once connected return to this page.<small> (<a href="#problems">problems?</a>)</small>
+	<p>You are currently connected to the internet. There's a big chance the Doodle3D WiFi-Box you're looking for is running it's own network. Please open your network settings and connect to a network like 'Doodle3D-...'. Once connected return to this page.<small> (<a href="#problems">problems?</a>)</small>
 
 	<a href="#find_step2" class="ui-btn">Next</a>
 	
@@ -82,7 +83,7 @@
 </div><!-- /page -->
 
 
-<!-- Start of first page -->
+<!-- Start of FIND_STEP2 page -->
 <div data-role="page" id="find_step2">
 
 	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
@@ -95,17 +96,17 @@
 
 	<h1>Step 2 of 2</h1>
 	
-	<p>We found your Doodle3D WiFi-Box. It's running its own network 'Doodle3D-123456'. You can keep it this way and start using it now OR you can connect your box to the internet.</p>
+	<p>We found your Doodle3D WiFi-Box. Please connect your WiFi-Box to the internet. You can also use it offline but then you aren't able to update.</p>
 	<br>
 	<ul data-role="listview">
-		<li><a href="#network">Join a network</a></li>
+		<li><a href="#network">Connect to the internet</a></li>
 		<li><a href="#draw">Draw (offline)</a></li>
 	</ul>
 	
 	</div><!-- /content -->
 </div><!-- /page -->
 
-<!-- Start of first page -->
+<!-- Start of STEP1_PROBLEMS page -->
 <div data-role="page" id="problems">
 
 	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
@@ -117,28 +118,74 @@
 
 	<div role="main" class="ui-content">
 
-	<p>You've tried but still can't find your WiFi-Box's own network?</p>
+	<p>Having troubles getting started with your WiFi-Box?</p>
 
-	<h3>make sure that:</h3>
+	<h3><p>Make sure that:</p></h3>
 	<ul>
-		<li>the box gets power (green lights should be on)</li>
-		<li>the box has fully started (takes a minute or two)?</li>
+		<li><p>The box gets power (green lights should be on).</p></li>
+		<li><p>The box has fully started (takes a minute or two)?</p></li>
+		<li><p>You are looking for the WiFi-Box in your local WiFi list. <a href="#locate_wifibox">more info</a></p></li> <!-- link to explenation how to connect to a WiFi-->
 	</ul>
 
-	<h3>if not</h3>
+	<h3><p>That is not the problem?</p></h3>
 	<ul>
-		<li>Is your box connected to a another network? <a href="#">more info</a></li>
-		<li>If your computer has an ethernet (network) port you can connect it directly to the Doodle3D WiFi-Box using the supplied ethernet cable.</li>
+		<li><p>Is your box connected to another network? <a href="#reset">more info</a></p></li>
+		<li><p>If your computer has an ethernet (network) port you can connect it directly to the Doodle3D WiFi-Box using the supplied ethernet cable. <a href="#ethernet">more info</a></p></li> <!-- explain how to connect a ethernet cable and what is next -->
+		<!-- There should be a point about repeaters as well, for which we do not have a solution yet -->
 	</ul>
 
-	<h3>got stuck?</h3>
-	if the problems remain please email us at <a href="mailto:help@doodle3d.com">help@doodle3d.com</a>
+	<h3><p>Got stuck?</p></h3>
+	<ul>
+		<li><p>If the problems remain please email us at <a href="mailto:help@doodle3d.com">help@doodle3d.com</a></p></li>
+	</ul>
 
 
 	</div><!-- /content -->
 </div><!-- /page -->
 
-<!-- Start of first page -->
+<div data-role="page" id="ethernet">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Troubleshooting</h1>
+	</div><!-- /header -->
+
+
+	<div role="main" class="ui-content">
+		<p>If your computer has an Ethernet port you are able to connect to the WiFi-Box through the Ethernet cable. Use the Ethernet cable that is provided with the WiFi-Box. Plug one end of the cable in the WiFi-Box and the other in your computer. Usually this forces the connection of your WiFi-Box over the connection of the internet, making you able to connect to the WiFi-Box but unable to connect to the internet.</p> <p>If this is not the case, search for a connection icon (on WINDOWS usually in the lower right corner and for MAC usually in the upper right corner). Click on the icon and search for options to change your current network(probably wireless) to a cable connection.</p><p>Once your computer is connected to the WiFi-Box, return to this page. The 'Find' page will automatically change if you have a connection to a WiFi-Box and will guide you further.</p>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="locate_wifibox">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Troubleshooting</h1>
+	</div><!-- /header -->
+
+
+	<div role="main" class="ui-content">
+		<h3>Locate WiFi-Box</h3>
+		<p>If you are able to connect to connect.doodle3d.com through the internet this means you are connected to a network.</p>
+		<ul>
+			<li><p>If your device can connect to the internet wirelessly it is able to connect to the WiFi-Box through WiFi.</p></li> 
+			<li><p>If your device is only able to connect to the internet through a cable it is usaully able to connect to the WiFi-Box through the Ethernet cable. In that case you are able to find more info <a href="#ethernet">here</a>.</p></li>
+		</ul>
+		<p>If you run the WiFi-Box for the first time it creates its own network. So aside of the network you are using right now to access the internet there is another network named 'Doodle3D-...' followed by the last 6 characters of the code that is printed on the side of the WiFi-Box.</p>
+		<p>To access this network you have to connect to the WiFi-Box network <strong>instead</strong> of your own network. How you are able to switch between a network differs from device you are using, here is a list of the most common used devices:</p>
+		<ul>
+			<li><p>SMARTPHONE/TABLET: Smartphones or tablets usually have a settings option in their main menu. Within the settings menu there usually is an option to change settings about your WiFi connection. Usually you are able to switch between different WiFi-spots (Networks) within these settings. Look for a list with different WiFi-spots, if everything works fine, and your WiFi-Box is on, there should be a WiFi-spot called 'Doodle3D...' followed by the last 6 characters of the code that is printed on the side of the WiFi-Box. Connect to this WiFi-spot and return to this page.</p></li>
+			<li><p>WINDOWS COMPUTER/LAPTOP: Windows computers usually (from windows Vista and above) have a small icon in the right lower corner of the screen which displays if you are currently connected to the internet (and if your connection is wireless or not). If you click on this icon a list will display with the network you are currently using and the networks that your computer is able to connect to. If everything works fine, and your WiFi-Box is on, there should be a WiFi-spot called 'Doodle3D...' followed by the last 6 characters of the code that is printed on the side of the WiFi-Box within this list. Connect to this WiFi-spot and return to this page.</p></li>
+			<li><p>MAC COMPUTER/LAPTOP: For most MAC computers there is a small WiFi icon in the upper right corner of their screen. If the WiFi connection is on you can click on the icon and a list with possible networks would appear. If everything works fine, and your WiFi-Box is on, there should be a WiFi-spot called 'Doodle3D...' followed by the last 6 characters of the code that is printed on the side of the WiFi-Box. Connect to this WiFi-spot and return to this page.</p></li>
+		</ul>
+
+		<p>Once you are connect to the WiFi-spot, the 'Find' page will automatically change and will guide you through the next steps.</p>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of CONNECT AP page -->
 <div data-role="page" id="connect_ap">
 
 	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
@@ -157,6 +204,28 @@
 	</div><!-- /content -->
 </div><!-- /page -->
 
+
+
+<!-- Start of reset page -->
+<div data-role="page" id="reset">
+
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Troubleshooting</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+		<p>If your WiFi-Box is already connected to another network, it is possible to reset the WiFi-Box and make it run it's own network again.</p>
+		<ul>
+			<li><p>You can do this by press and holding the green light button on the top of the WiFi-Box. By holding this button for 3 seconds the WiFi-Box will reset its own network.</p></li>
+
+			<li><p>If you have a device with an Ethernet port, it is always possible to connect your WiFi-Box through the ethernet cable.</p></li>
+		</ul>
+
+	</div><!-- /content -->
+</div><!-- /page -->
 
 <!-- Start of first page -->
 <div data-role="page" id="status">
@@ -187,10 +256,17 @@
 <div data-role="page" id="network">
 
 	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
-	<h3>Join a network</h3>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Find a WiFi-Box</h1>
+	</div><!-- /header -->
+
+	
 
 	<div role="main" class="ui-content">
-
+		<h3>Join a network</h3>
+			<p>Select your own network from the following list:</p>
+			<br>
 		<ul data-role="listview">
 			<li data-icon="lock"><a href="#join_secured_network">Baksteen</a></li>
 			<li><a href="#connecting_to_network">Thomson12445</a></li>
@@ -204,6 +280,10 @@
 
 <div data-role="page" id="join_other_network">
 	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Connect</h1>
+	</div><!-- /header -->
 	<div role="main" class="ui-content">
 		<h3>Join a hidden network</h3>
 		<input type="text" name="textinput-s" id="ssid" placeholder="Network name" value="" data-clear-btn="true">
@@ -213,7 +293,11 @@
 </div><!-- /page -->
 
 <div data-role="page" id="join_secured_network">
-	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>	
+	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Connect</h1>
+	</div><!-- /header -->
 	<div role="main" class="ui-content">
 		<h3>Join a secured network</h3>
 		<input type="password" name="textinput-s" id="textinput-s" placeholder="Password" value="" data-clear-btn="true">
@@ -223,8 +307,15 @@
 
 <div data-role="page" id="connecting_to_network">
 	<a href="#devices"><img id="logo" src="img/logo_full.png"></a>
+	<div data-role="header">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<h1>Connect</h1>
+	</div><!-- /header -->
 	<div role="main" class="ui-content">
+		<img id="logo" src="img/Connect to home.png">
 		<h3>Connecting to network...</h3>
+		<p>Your WiFi-Box is trying to connect to your local network. To use your WiFi-Box, reconnect to the network you directed the WiFi-Box to. Once you are connected return to this page.</p>
+		<!-- redirect to connect.doodle3d.com when reconnected to internet --> 
 	</div><!-- /content -->
 </div><!-- /page -->
 
